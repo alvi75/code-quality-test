@@ -1,0 +1,8 @@
+import java.util.*;
+
+public class Translationtranslation_22 {
+    public TagQueueResult tagQueue(TagQueueRequest request) {
+        request = beforeClientExecution(request);
+        return executeTagQueue(request);
+    }
+}
