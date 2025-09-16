@@ -6,14 +6,36 @@ on:
   pull_request:
     types: [opened, synchronize, reopened]
 jobs:
-  sonarqube:
-    name: SonarQube
+  sonarcloud:
+    name: SonarCloud
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0  # Shallow clones should be disabled for a better relevancy of analysis
-      - name: SonarQube Scan
-        uses: SonarSource/sonarqube-scan-action@v5
+      
+      # Set up Java
+      - name: Set up JDK 17
+        uses: actions/setup-java@v3
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+      
+      # Compile Java files
+      - name: Compile Java files
+        run: |
+          # Create a directory for compiled classes
+          mkdir -p target/classes
+          
+          # Find and compile all Java files
+          find java_files -name "*.java" -print0 | xargs -0 javac -d target/classes -cp target/classes || true
+          
+          # List compiled classes (for debugging)
+          echo "Compiled classes:"
+          find target/classes -name "*.class"
+      
+      - name: SonarCloud Scan
+        uses: SonarSource/sonarcloud-action@master
         env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
