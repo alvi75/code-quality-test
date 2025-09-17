@@ -1,0 +1,11 @@
+import java.util.*;
+
+public class Translationtranslation_989 {
+    public boolean find(int start) {
+        matchFound = findImpl(address, input, start, input.length);
+        if (matchFound) {
+            findPos = matchOffsets[1];
+        }
+        return matchFound;
+    }
+}
