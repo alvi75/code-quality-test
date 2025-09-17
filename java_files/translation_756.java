@@ -1,0 +1,10 @@
+import java.util.List;
+import java.util.ArrayList;
+import java.util.*;
+
+public class Translationtranslation_756 {
+    2016-06-07", "GetRepoBuildList", "cr");
+    setUriPattern("/repos/[RepoNamespace]/[RepoName]/build");
+    setMethod(MethodType.GET);
+    }
+}

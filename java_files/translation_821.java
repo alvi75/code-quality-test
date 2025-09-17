@@ -1,0 +1,11 @@
+import java.util.*;
+
+public class Translationtranslation_821 {
+    public String toString() {
+        StringBuilder buffer = new StringBuilder();
+        buffer.append("[SCENARIOPROTECT]\n");
+        buffer.append(" .options = ").append(HexDump.shortToHex(_options)).append("\n");
+        buffer.append("[/SCENARIOPROTECT]\n");
+        return buffer.toString();
+    }
+}

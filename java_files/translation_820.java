@@ -1,0 +1,9 @@
+import java.util.*;
+
+public class Translationtranslation_820 {
+    public ExternalBookBlock(int numberOfSheets) {
+        _externalBookRecord = SupBookRecord.createInternalReferences((short) numberOfSheets);
+        _externalNameRecords = new ExternalNameRecord[0];
+        _crnBlocks = new CRNBlock[0];
+    }
+}
