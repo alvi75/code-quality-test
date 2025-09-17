@@ -1,0 +1,25 @@
+import java.util.List;
+import java.util.ArrayList;
+import java.util.*;
+
+public class Translationtranslation_365 {
+    public String outputToString(Object output) {
+        if (!(output instanceof List)) {
+            return outputs.outputToString(output);
+        }
+    }
+    final List<T> outputList = (List<T>) output;
+    final StringBuilder b = new StringBuilder();
+    b.append('[');
+    for (int i = 0;
+    i < outputList.size();
+    i++) {
+        if (i > 0) {
+            b.append(", ");
+        }
+        b.append(outputs.outputToString(outputList.get(i)));
+    }
+    b.append(']');
+    return b.toString();
+    }
+}

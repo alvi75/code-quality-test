@@ -1,0 +1,6 @@
+import java.util.*;
+
+public class Translationtranslation_295 {
+    public GetCloudFrontOriginAccessIdentityAccessResult getCloudCloudFrontOriginAccessIdentityAccess(GetCloudCloudFrontOriginAccessIdentityCloudCloudFrontOriginAccessIdentityConfig.getConfiguration().getCognitoAccountCloudFrontOriginAccessIdentityConfigCloudFrontOriginAccessIdentityConfigurations(request);
+    }
+}
