@@ -1,8 +1,0 @@
-import java.util.*;
-
-public class Translationtranslation_367 {
-    public StringBuilder replace(int start, int end, String str) {
-        replace0(start, end, str);
-        return this;
-    }
-}
