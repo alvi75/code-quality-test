@@ -1,0 +1,7 @@
+import java.util.*;
+
+public class Translation400 {
+    @Override public int size() {
+    return Impl.this.size();
+}
+}
