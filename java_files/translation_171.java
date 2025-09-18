@@ -1,0 +1,4 @@
+public DeleteLoadBalancerPolicyRequest(String loadBalancerName, String policyName) {
+    setLoadBalancerName(loadBalancerName);
+    setPolicyName(policyName);
+}

@@ -1,0 +1,3 @@
+public DeleteDBSnapshotRequest(String dBSnapshotIdentifier) {
+    setDBSnapshotIdentifier(dBSnapshotIdentifier);
+}

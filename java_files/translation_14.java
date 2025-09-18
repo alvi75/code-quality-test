@@ -1,0 +1,13 @@
+public boolean ready() throws IOException {
+    synchronized (lock) {
+        if (in == null) {
+            throw new IOException("InputStreamReader is closed");
+        }
+        try {
+            return bytes.remaining() > 0 || in.available() > 0;
+        }
+        catch (IOException e) {
+            return false;
+        }
+    }
+}

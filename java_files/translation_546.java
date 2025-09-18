@@ -1,0 +1,4 @@
+public ModifyDBParameterGroupRequest(String dBParameterGroupName, java.util.List<Parameter> parameters) {
+    setDBParameterGroupName(dBParameterGroupName);
+    setParameterValues(parameters);
+}

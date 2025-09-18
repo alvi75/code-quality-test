@@ -1,0 +1,4 @@
+public DescribeDomainResult describeDomain(DescribeDomainRequest request) {
+    request = beforeClientExecution(request);
+    return executeDescribeDomain(request);
+}

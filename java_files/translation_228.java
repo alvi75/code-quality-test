@@ -1,0 +1,3 @@
+public RemoveTagsRequest(String resourceId) {
+    setResourceId(resourceId);
+}

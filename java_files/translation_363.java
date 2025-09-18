@@ -1,0 +1,3 @@
+public DeleteAccountAliasRequest(String accountAlias) {
+    setAccountAlias(accountAlias);
+}

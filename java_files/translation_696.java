@@ -1,0 +1,7 @@
+@Override public boolean remove(Object key) {
+    synchronized (Hashtable.this) {
+        int oldSize = size;
+        Hashtable.this.remove(key);
+        return size != oldSize;
+    }
+}

@@ -1,0 +1,7 @@
+public short getGB2312Id( char ch ) {
+    Integer id = getUnicodeId(ch);
+    if (id == null) {
+        return -1;
+    }
+    return id;
+}

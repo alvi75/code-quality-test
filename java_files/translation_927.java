@@ -1,0 +1,3 @@
+public ReceiveMessageRequest(String queueUrl) {
+    setQueueUrl(queueUrl);
+}

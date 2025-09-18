@@ -1,0 +1,4 @@
+public Attribute(String name, String value) {
+    setName(name);
+    setValue(value);
+}

@@ -1,0 +1,3 @@
+public CreateAccountAliasRequest(String accountAlias) {
+    setAccountAlias(accountAlias);
+}

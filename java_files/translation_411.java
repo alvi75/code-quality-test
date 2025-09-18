@@ -1,0 +1,3 @@
+public ListVaultsRequest(String accountId) {
+    setAccountId(accountId);
+}

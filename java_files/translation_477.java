@@ -1,0 +1,3 @@
+public DomainMetadataRequest(String domainName) {
+    setDomainName(domainName);
+}

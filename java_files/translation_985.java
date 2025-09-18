@@ -1,0 +1,3 @@
+public DeleteServerCertificateRequest(String serverCertificateName) {
+    setServerCertificateName(serverCertificateName);
+}
