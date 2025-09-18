@@ -1,4 +1,0 @@
-public DeleteGroupPolicyRequest(String groupName, String policyName) {
-    setGroupName(groupName);
-    setPolicyName(policyName);
-}

@@ -1,4 +1,0 @@
-public AssociateWebsiteAuthorizationProviderResult associateWebsiteAuthorizationProvider(AssociateWebsiteAuthorizationProviderRequest request) {
-    request = beforeClientExecution(request);
-    return executeAssociateWebsiteAuthorizationProvider(request);
-}

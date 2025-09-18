@@ -1,3 +1,0 @@
-public CreateLoadBalancerRequest(String loadBalancerName) {
-    setLoadBalancerName(loadBalancerName);
-}

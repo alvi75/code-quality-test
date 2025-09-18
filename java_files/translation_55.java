@@ -1,3 +1,0 @@
-public BootstrapActionDetail(BootstrapActionConfig bootstrapActionConfig) {
-    setBootstrapActionConfig(bootstrapActionConfig);
-}

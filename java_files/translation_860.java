@@ -1,3 +1,0 @@
-public CreateQueueRequest(String queueName) {
-    setQueueName(queueName);
-}

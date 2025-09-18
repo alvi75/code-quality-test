@@ -1,3 +1,0 @@
-public UpdateUserRequest(String userName) {
-    setUserName(userName);
-}

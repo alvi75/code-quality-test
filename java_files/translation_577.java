@@ -1,3 +1,0 @@
-public boolean contains(Object o) {
-    return map.containsKey(o);
-}

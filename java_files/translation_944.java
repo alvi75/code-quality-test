@@ -1,3 +1,0 @@
-public DeleteLoginProfileRequest(String userName) {
-    setUserName(userName);
-}
