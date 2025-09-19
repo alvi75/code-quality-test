@@ -1,0 +1,11 @@
+import java.util.*;
+
+public class Translation216 {
+    public static CharBuffer wrap(char[] array, int start, int charCount) {
+    Arrays.checkStartAndCount(array.length, start, charCount);
+    CharBuffer buf = new ReadWriteCharArrayBuffer(array);
+    buf.position = start;
+    buf.limit = start + charCount;
+    return buf;
+}
+}

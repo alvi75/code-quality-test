@@ -1,0 +1,8 @@
+import java.util.*;
+
+public class Translation24 {
+    public CacheSubnetGroup(ChangeMessageVisibilityBatchResult changeMessageVisibilityToSubnetGroupMessageVisibilityToSubnetGroupsResponse modifyClusterMessageVisibilityToSubnetGroup(ModifyCacheMessageVisibilityToSubnetGroupRequest request) {
+    request = beforeClientExecution(request);
+    return executeModifyMessagesMessageVisibilityToSubnetGroupMessageVisibilityToSubnetGroupMessageVisibilityToSubnetGroupMessageVisibilityToSubnetGroup(request);
+}
+}
