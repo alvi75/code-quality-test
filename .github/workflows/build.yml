@@ -5,29 +5,18 @@ on:
       - main
   pull_request:
     types: [opened, synchronize, reopened]
+
 jobs:
-  sonarqube:
-    name: SonarQube
+  sonarcloud:
+    name: SonarCloud
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
         with:
-          fetch-depth: 0  # Shallow clones should be disabled for a better relevancy of analysis
+          fetch-depth: 0
       
-      # ADD THIS: Set up Java (missing from SonarCloud template)
-      - name: Set up JDK 17
-        uses: actions/setup-java@v3
-        with:
-          java-version: '17'
-          distribution: 'temurin'
-      
-      # ADD THIS: Compile Java files (missing from SonarCloud template)
-      - name: Compile Java files
-        run: |
-          mkdir -p target/classes
-          find . -name "*.java" -print0 | xargs -0 javac -d target/classes -cp target/classes || true
-      
-      - name: SonarQube Scan
-        uses: SonarSource/sonarqube-scan-action@v5
+      - name: SonarCloud Scan
+        uses: sonarsource/sonarcloud-github-action@master
         env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
