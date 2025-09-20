@@ -1,9 +1,0 @@
-import java.util.*;
-
-public class Translation809 {
-    ublic IntervalSet getExpectedTokensWithinCurrentRule() {
-    ATN atn = getInterpreter().atn;
-    ATNState s = atn.states.get(getState());
-    return atn.nextTokens(s);
-}
-}
