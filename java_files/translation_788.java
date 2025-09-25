@@ -1,5 +1,0 @@
-import java.util.*;
-
-public class Translation788 {
-    2016-06-20 DeleteTable 2016-06-20 DeleteTable 2016-06-20 DeleteTable 2016-06-20 DeleteTable 2016-06-20 DeleteTable 2016-06-20 DeleteTable 2016-06-20 DeleteTable 2016-06-20 DeleteTable 2016-06-20 DeleteTable 2016-06-20 DeleteTable 2016-06-20 DeleteTable 2016-06-20 DeleteTable 2016-06-20 DeleteTable 2016-06-20 DeleteTable 2016-06-20 DeleteTable 2016-06-20 DeleteTable 2016-06-20 DeleteTable 2016-06-20 DeleteTable 2016-06-20 DeleteTable 2016-06-20 DeleteTable 2016-06-20 DeleteTable 2016-06-20 DeleteTable 2016-06-20 DeleteTable 2016-06-20 DeleteTable 2016-06-20 DeleteTable 2016-06-20 DeleteTable 2016-06-20 DeleteTable 2016-06-20 DeleteTable 2016-06-20 DeleteTable 2016-06-20 DeleteTable 2016-06-20 DeleteTable 2016-06-20 DeleteTable 2016-06-20 DeleteTable 2016-06-20 DeleteTable 2016-06-20 DeleteTable 2016-06-20 DeleteTable 2016-06-20 DeleteTable 2016-06-20 DeleteTable 2016-06-20 DeleteTable 2016-
-}
