@@ -1,0 +1,11 @@
+import java.util.*;
+
+public class Translation790 {
+    public void freeBefore(int pos) {
+    assert pos >= 0;
+    assert pos <= nextPos;
+    int newCount = nextPos - pos;
+    assert newCount <= count;
+    count = newCount;
+}
+}
