@@ -1,0 +1,9 @@
+import java.util.*;
+
+public class Translation894 {
+    public void clearFormatting() {
+    string = cloneStringIfRequired();
+    string.clearFormatting();
+    addToSSTIfRequired();
+}
+}
