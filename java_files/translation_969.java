@@ -1,0 +1,10 @@
+import java.util.*;
+
+public class Translation969 {
+    public DeleteAttributesRequest(String domainName, String itemName, java.util.List<Attribute> attributes, ExpectedValue expected) {
+    setDomainName(domainName);
+    setItemName(itemName);
+    setAttributes(attributes);
+    setExpected(expected);
+}
+}
