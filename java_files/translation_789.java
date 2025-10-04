@@ -1,8 +1,0 @@
-import java.util.*;
-
-public class Translation789 {
-    1 public boolean lessThan(TextFragment fragA, TextFragment fragB) {
-    if (fragA.score == fragB.score)return fragA.fragNum > fragB.fragNum;
-    elsereturn fragA.score < fragB.score;
-}
-}
