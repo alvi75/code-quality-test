@@ -1,7 +1,0 @@
-import java.util.*;
-
-public class Generated_636766f91a6d9265ec01777f {
-    public static boolean toBoolean(Boolean bool){
-		return (bool==null)?false:bool.booleanValue();
-	}
-}
