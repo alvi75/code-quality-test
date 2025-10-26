@@ -1,0 +1,6 @@
+ublic void serialize(LittleEndianOutput out) {
+    out.writeShort(getLeftRowGutter());
+    out.writeShort(getTopColGutter());
+    out.writeShort(getRowLevelMax());
+    out.writeShort(getColLevelMax());
+}

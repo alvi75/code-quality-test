@@ -1,0 +1,6 @@
+ublic StopDominantLanguageDetectionJobResponse StopDominantLanguageDetectionJob(StopDominantLanguageDetectionJobRequest request){
+    var options = new InvokeOptions();
+    options.RequestMarshaller = StopDominantLanguageDetectionJobRequestMarshaller.Instance;
+    options.ResponseUnmarshaller = StopDominantLanguageDetectionJobResponseUnmarshaller.Instance;
+    return Invoke<StopDominantLanguageDetectionJobResponse>(request, options);
+}

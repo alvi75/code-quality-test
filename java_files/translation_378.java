@@ -1,0 +1,5 @@
+ublic InitiateJobRequest(String accountId, String vaultName, JobParameters jobParameters) {
+    setAccountId(accountId);
+    setVaultName(vaultName);
+    setJobParameters(jobParameters);
+}
