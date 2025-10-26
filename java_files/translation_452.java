@@ -1,0 +1,11 @@
+import java.util.*;
+
+public class Translation452 {
+    public synchronized void reset() {
+    checkNotClosed();
+    if (mark == -1) {
+        throw new IOException("Invalid mark");
+    }
+    pos = mark;
+}
+}

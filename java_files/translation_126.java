@@ -1,0 +1,26 @@
+import java.util.*;
+
+public class Translation126 {
+    public void add(char[] output, int offset, int len, int endOffset, int posLength) {
+    if (count == outputs.length) {
+        charsRefs = Arrays.copyOf(outputs, ArrayUtil.oversize(count+1, RamUsageEstimator.NUM_BYTES_OBJECT_REF));
+    }
+    if (count == endOffsets.length) {
+        int[] next = new int[ArrayUtil.oversize(count+1, RamUsageEstimator.NUM_BYTES_INT32)];
+        System.arraycopy(endOffsets, 0, next, 0, count);
+        endOffsets = next;
+    }
+    if (count == posLengths.length) {
+        int[] next = new int[ArrayUtil.oversize(count+1, RamUsageEstimator.NUM_BYTES_INT32)];
+        System.arraycopy(posLengths, 0, next, 0, count);
+        posLengths = next;
+    }
+    if (outputs[count] == null) {
+        outputs[count] = new CharTermVectorCharTerm();
+    }
+    outputs[count].copyChars(output, offset, len);
+    endOffsets[count] = endOffset;
+    posLengths[count] = posLength;
+    count++;
+}
+}
