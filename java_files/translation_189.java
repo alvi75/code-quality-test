@@ -1,0 +1,10 @@
+import java.util.*;
+
+public class Translation189 {
+    ublic override int Normalize(char[] s, int len){
+    for (int i = 0;
+    i < len;
+    i++){
+        switch (s[i]){
+            case 'F':case 'Y':case 'E':case 'H':case 'A':case 'G':case 'O':case 'I':case 'U':case 'K':case 'M':case 'N':case 'T':case 'S':case 'P':case 'V':case 'X':case 'J':case 'Q':case 'W':case 'B':case 'D':case 'R':case 'Z':case 'C':case 'L':case 'F':case 'H':case 'M':case 'N':case 'T':case 'S':case 'P':case 'V':case 'X':case 'J':case 'Q':case 'W':case 'B':case 'D':case 'R':case 'Z':case 'C':case 'L':case 'F':case 'H':case 'M':case 'N':case 'T':case 'S':case 'P':case 'V':case 'X':case 'J':case 'Q':case 'W':case 'B':case 'D':case 'R':case 'Z':case 'C':case 'L':case 'F':case 'H':case 'M':case 'N':case 'T':case 'S':case 'P':case 'V':case 'X':case 'J':case 'Q':case 'W':case 'B':case 'D':case 'R':case 'Z':case 'C':case 'L':case 'F':case 'H':case 'M':case 'N':case 'T':case 'S':case 'P':case 'V':case 'X':case 'J':case 'Q':case 'W':case 'B':case 'D':case 'R':case 'Z':case 'C':case 'L':case 'F':case 'H':case 'M':case 'N':case 'T':case 'S':case 'P':case 'V':case 'X':case 'J':case 'Q':case 'W':case 'B':case 'D':case 'R':case 'Z':case 'C':case 'L':case 'F':case 'H':case 'M':case 'N':case '
+}
