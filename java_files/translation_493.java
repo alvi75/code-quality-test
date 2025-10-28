@@ -1,7 +1,0 @@
-import java.util.*;
-
-public class Translation493 {
-    ublic CheckMultiagentRequest(): base("visionai-poc", "2020-04-08", "CheckMultiagent"){
-    Method = MethodType.POST;
-}
-}
