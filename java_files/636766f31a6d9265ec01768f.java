@@ -1,0 +1,12 @@
+import java.util.*;
+
+public class Generated_636766f31a6d9265ec01768f {
+    /**Return a clone of the given array.**/
+    public static char[] clone(final char[] array) {
+        if (array == null)
+            return null;
+        final char[] newArray = new char[array.length];
+        System.arraycopy(array, 0, newArray, 0, array.length);
+        return newArray;
+    }
+}
