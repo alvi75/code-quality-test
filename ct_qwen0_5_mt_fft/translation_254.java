@@ -1,0 +1,9 @@
+import java.util.*;
+
+public class Translation254 {
+    public ModifySnapshotAttributeRequest(String snapshotId, String attribute, OperationType operationType) {
+    setSnapshotId(snapshotId);
+    setAttribute(attribute);
+    setOperationType(operationType);
+}
+}

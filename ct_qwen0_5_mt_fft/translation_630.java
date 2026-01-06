@@ -1,0 +1,11 @@
+import java.util.*;
+
+public class Translation630 {
+    public String toString() {
+    StringBuilder buffer = new StringBuilder();
+    buffer.append("[BACKUP]\n");
+    buffer.append(" .backup = ").append(HexDump.shortToHex(getBackup())).append("\n");
+    buffer.append("[/BACKUP]\n");
+    return buffer.toString();
+}
+}
