@@ -1,0 +1,22 @@
+import java.util.*;
+
+public class Translation288 {
+    1 public boolean equals(Object object) {
+    if (this == object) {
+        return true;
+    }
+    if (object instanceof Set) {
+        Set<?> s = (Set<?>) object;
+        try {
+            return size() == s.size() && containsAll(s);
+        }
+        catch (NullPointerException e) {
+            return false;
+        }
+        catch (ClassCastException e) {
+            return false;
+        }
+    }
+    return false;
+}
+}
