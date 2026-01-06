@@ -1,0 +1,11 @@
+import java.util.*;
+
+public class Translation154 {
+    public static short lookupIndexByName(String name) {
+    FunctionMetadata fm = getInstance().getFunctionByNameInternal(name);
+    if (fm == null) {
+        return -1;
+    }
+    return (short) fm.getIndex();
+}
+}

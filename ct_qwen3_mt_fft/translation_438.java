@@ -1,0 +1,6 @@
+import java.util.*;
+
+public class Translation438 {
+    1 public long ramBytesUsed() {
+    return super.ramBytesUsed()+ RamUsageEstimator.NUM_BYTES_OBJECT_HEADER+2 * Integer.BYTES+2*Boolean.BYTES+2*Float.BYTES+2*Double.BYTES+2*Long.BYTES+2*Short.BYTES+2*Character.BYTES+2*Byte.BYTES+2*String.BYTES+2*Float.BYTES+2*Double.BYTES+2*Integer.BYTES+2*Boolean.BYTES+2*Short.BYTES+2*Character.BYTES+2*Byte.BYTES+2*String.BYTES+2*Float.BYTES+2*Double.BYTES+2*Integer.BYTES+2*Boolean.BYTES+2*Short.BYTES+2*Character.BYTES+2*Byte.BYTES+2*String.BYTES+2*Float.BYTES+2*Double.BYTES+2*Integer.BYTES+2*Boolean.BYTES+2*Short.BYTES+2*Character.BYTES+2*Byte.BYTES+2*String.BYTES+2*Float.BYTES+2*Double.BYTES+2*Integer.BYTES+2*Boolean.BYTES+2*Short.BYTES+2*Character.BYTES+2*Byte.BYTES+2*String.BYTES+2*Float.BYTES+2*Double.BYTES+2*Integer.BYTES+2*Boolean.BYTES+2*Short.BYTES+2*Character.BYTES+2*Byte.BYTES+2*String.BYTES+2*Float.BYTES+2*Double.BYTES+2*Integer.BYTES+2*Boolean.BYTES+2*Short.BYTES+2*Character.BYTES+2*Byte.BYTES+2*String.BYTES+2*Float.BYTES+2*Double.BYTES+2*Integer.BYTES+2*Boolean.BYTES+2*Short.BYTES+2*Character.BYTES+2*Byte.BYTES+2*String.BYTES+2*Float.BYTES+2*Double.BYTES+2*Integer.BYTES+2*Boolean.BYTES+2*Short.BY
+}
