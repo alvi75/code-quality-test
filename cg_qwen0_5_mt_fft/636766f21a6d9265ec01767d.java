@@ -1,0 +1,7 @@
+import java.util.*;
+
+public class Generated_636766f21a6d9265ec01767d {
+    public static String toString(Object object){
+        return (object == null) ? null : object.toString();
+    }
+}

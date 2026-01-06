@@ -1,0 +1,11 @@
+import java.util.*;
+
+public class Generated_636767041a6d9265ec01790f {
+    public static Integer[] toObject(final int[] array){
+		Integer[] result = new Integer[array.length];
+		for (int i = 0; i < array.length; i++) {
+			result[i] = Integer.valueOf(array[i]);
+		}
+		return result;
+	}
+}
