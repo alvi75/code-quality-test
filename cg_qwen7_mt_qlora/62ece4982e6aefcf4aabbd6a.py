@@ -1,0 +1,13 @@
+def replace_dots(value, arg):
+	"""
+	Replaces all values of '.' to arg from the given string
+    Args:
+        value: old string
+        arg: new string to replace '.'
+    Returns:
+        str, the replaced string
+	"""
+	if not isinstance(value, basestring) or not isinstance(arg, basestring):
+		return value
+
+	return value.replace('.', arg)

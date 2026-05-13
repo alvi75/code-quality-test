@@ -1,0 +1,14 @@
+def paging(response, max_results):
+	"""
+	Return every response with the length of max_results
+    Args:
+    response (list): WAPI response.
+    max_results (int): Maximum number of objects to be returned in one page.
+    Returns:
+        Generator object with WAPI response split page by page.
+	"""
+	while True:
+		yield response
+		response = wapi.getWAPResponse()
+		if len(response) < max_results:
+			break

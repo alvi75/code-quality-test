@@ -1,0 +1,9 @@
+def popitem(self):
+	"""
+	Remove and return the `(key, value)` pair least recently used.
+	"""
+	if not self:
+		raise KeyError('pop from empty OrderedDict')
+	k = next(iter(self))
+	v = self.pop(k)
+	return (k, v)

@@ -1,0 +1,13 @@
+def _replace_register(flow_params, register_number, register_value):
+	"""
+	Replace the value of flow_params[register_number] with flow_params[register_value] and delete flow_params[register_value]
+	"""
+
+	if isinstance(register_number, int) and isinstance(register_value, int):
+
+		flow_params[register_number] = flow_params[register_value]
+
+		del flow_params[register_value]
+
+	else:
+		raise TypeError("Invalid type for register number or register value")

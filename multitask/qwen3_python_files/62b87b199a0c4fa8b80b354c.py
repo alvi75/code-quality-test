@@ -1,0 +1,63 @@
+def _get_seq_with_type(seq, bufsize=None):
+	"""
+	Return a (sequence, type) pair.
+Sequence is derived from *seq*
+(or is *seq*, if that is of a sequence type).
+	"""
+	if isinstance(seq, Sequence):
+		return seq, type(seq)
+	elif isinstance(seq, str):
+		return Seq(seq), type(seq)
+	elif isinstance(seq, bytes):
+		return Seq(seq), type(seq)
+	elif isinstance(seq, bytearray):
+		return Seq(seq), type(seq)
+	elif isinstance(seq, memoryview):
+		return Seq(seq), type(seq)
+	elif isinstance(seq, numpy.ndarray):
+		return Seq(seq), type(seq)
+	elif isinstance(seq, collections.deque):
+		return deque(seq), type(seq)
+	elif isinstance(seq, collections.Iterable):
+		return list(seq), type(seq)
+	elif isinstance(seq, collections.MutableSequence):
+		return list(seq), type(seq)
+	elif isinstance(seq, collections.MutableMapping):
+		return dict(seq), type(seq)
+	elif isinstance(seq, collections.Mapping):
+		return dict(seq), type(seq)
+	elif isinstance(seq, collections.Iterator):
+		return list(seq), type(seq)
+	elif isinstance(seq, collections.Sequence):
+		return list(seq), type(seq)
+	elif isinstance(seq, collections.Set):
+		return set(seq), type(seq)
+	elif isinstance(seq, collections.MutableSet):
+		return set(seq), type(seq)
+	elif isinstance(seq, collections.Counter):
+		return Counter(seq), type(seq)
+	elif isinstance(seq, collections.OrderedDict):
+		return OrderedDict(seq), type(seq)
+	elif isinstance(seq, collections.UserList):
+		return UserList(seq), type(seq)
+	elif isinstance(seq, collections.UserDict):
+		return UserDict(seq), type(seq)
+	elif isinstance(seq, collections.UserString):
+		return UserString(seq), type(seq)
+	elif isinstance(seq, collections.UserFunction):
+		return UserFunction(seq), type(seq)
+	elif isinstance(seq, collections.Callable):
+		return Callable(seq), type(seq)
+	elif isinstance(seq, collections.Hashable):
+		return Hashable(seq), type(seq)
+	elif isinstance(seq, collections.Sized):
+		return Sized(seq), type(seq)
+	elif isinstance(seq, collections.BuiltinFunctionType):
+		return BuiltinFunctionType(seq), type(seq)
+	elif isinstance(seq, collections.BuiltinMethodType):
+		return BuiltinMethodType(seq), type(seq)
+	elif isinstance(seq, collections.BuiltinMethodDescriptor):
+		return BuiltinMethodDescriptor(seq), type(seq)
+	elif isinstance(seq, collections.BuiltinMethodWrapper):
+		return BuiltinMethodWrapper(seq), type(seq)
+	elif isinstance(seq, collections.BuiltinObject):
