@@ -1,0 +1,14 @@
+import java.util.*;
+
+public class Generated_636767791a6d9265ec01826d {
+    /**Find the value corresponding to key in props, then perform variable substitution on the found value. Return the substitution result, or the value in case of exception. **/
+    public static String findAndSubst(String key,Properties props){
+        String val = find(key,props);
+        if(val==null) return null;
+        try{
+            return substVars(val,props);
+        }catch(Exception e){
+            return val;
+        }
+    }
+}
