@@ -1,0 +1,15 @@
+import java.util.*;
+
+public class Translation541 {
+    public BytesRef next() {
+    termUpto++;
+    if (termUpto >= info.terms.size()) {
+        return null;
+    }
+    else {
+        BytesRefBuilder br = new BytesRefBuilder();
+        info.terms.get(info.sortedTerms[termUpto], br);
+        return br.get();
+    }
+}
+}

@@ -1,0 +1,16 @@
+import java.util.*;
+
+public class Translation885 {
+    public RevCommit tryFastForward(RevCommit newCommit)throws NoWorkTreeException, TransportException {
+    Ref head = repo.findRef(Constants.HEAD);
+    if (head == null)throw new RefNotFoundException(MessageFormat.format(JGitText.get().refNotResolved,Constants.HEAD));
+    ObjectId headId = head.getObjectId();
+    if (headId == null)throw new RefNotFoundException(MessageFormat.format(JGitText.get().refNotResolved,Constants.HEAD));
+    RevCommit headCommit = walk.lookupCommit(headId);
+    if (walk.isMergedInto(newCommit, headCommit))return newCommit;
+    String headName;
+    if (head.isSymbolic())headName = head.getTarget().getName();
+    elsetheadName = "detached HEAD";
+    return tryFastForward(headName, headCommit, newCommit);
+}
+}

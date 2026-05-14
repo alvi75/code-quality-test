@@ -1,0 +1,8 @@
+import java.util.*;
+
+public class Translation11 {
+    public QueryParserTokenManager(CharStream stream) {
+    this.in = stream;
+    bufpos = -1;
+}
+}
