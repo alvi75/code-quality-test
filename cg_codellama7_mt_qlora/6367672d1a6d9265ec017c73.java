@@ -1,0 +1,14 @@
+import java.util.*;
+
+public class Generated_6367672d1a6d9265ec017c73 {
+    public boolean shouldPrintMessage(int timestamp, String message) {
+        if (messages.containsKey(message)) {
+            int lastTimestamp = messages.get(message);
+            if (timestamp - lastTimestamp <= 10) {
+                return false;
+            }
+        }
+        messages.put(message, timestamp);
+        return true;
+    }
+}
